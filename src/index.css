@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/vrz2wkr.css");
+@import "tailwindcss";
+
+@theme {
+  --color-blanco: #ffffed;
+  --color-bordo: #3a0e03;
+  --color-celeste: #b6c5d7;
+  --color-gris: #e6e6e6;
+
+  --font-coolvetica: "coolvetica", sans-serif;
+  --font-manuscrita: "adobe-handwriting-ernie", sans-serif;
+  --font-weight-book: 400;
+  --font-weight-regular: 500;
+}
+
+.logos-slide {
+  animation: 25s slide infinite linear;
+  display: flex;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
