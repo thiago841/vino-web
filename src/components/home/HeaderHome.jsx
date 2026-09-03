@@ -74,12 +74,12 @@ export default function Header() {
         >
           <ul className="flex flex-col gap-10 text-bordo font-bold px-10">
             <li>
-              <a
+              <Link
                 href="#quienesSomos"
                 onClick={scrollTo("quienesSomos", closeAll)}
               >
                 SOBRE NOSOTROS
-              </a>
+              </Link>
             </li>
 
             {/* ── SERVICIOS con submenú en flujo (empuja hacia abajo) ── */}
@@ -104,34 +104,41 @@ export default function Header() {
                 `}
               >
                 <li>
-                  <a href="/branding" onClick={closeAll}>
-                    Branding
-                  </a>
+                  <Link href="/branding" onClick={closeAll}>
+                    Branding L
+                  </Link>
                 </li>
                 <li>
-                  <a href="/foto-video" onClick={closeAll}>
+                  <Link href="/foto-video" onClick={closeAll}>
                     Foto y Video
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/invitacion-web" onClick={closeAll}>
+                  <Link href="/invitacion-web" onClick={closeAll}>
                     Invitaciones Web
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li>
-              <a href="#proyectos" onClick={scrollTo("proyectos", closeAll)}>
+              <Link href="#proyectos" onClick={scrollTo("proyectos", closeAll)}>
                 PROYECTOS
-              </a>
+              </Link>
+            </li>
+            <li>
+              <a href="wa.me/message/DMF23YLR6NINL1">CONTACTANOS</a>
             </li>
           </ul>
         </nav>
 
         {/* ── Nav desktop (md+) ── */}
         <nav className="hidden md:flex md:flex-row md:gap-12 md:text-blanco md:text-2xl">
-          <Link href="#quienesSomos" onClick={scrollTo("quienesSomos")}>
+          <Link
+            href="#quienesSomos"
+            onClick={scrollTo("quienesSomos")}
+            className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
             SOBRE NOSOTROS
           </Link>
 
@@ -144,7 +151,7 @@ export default function Header() {
             <Link
               href="#servicios"
               onClick={scrollTo("servicios")}
-              className="flex items-center gap-1 font-bold cursor-pointer"
+              className="relative flex items-center gap-1 font-bold cursor-pointer after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
               SERVICIOS
               <ChevronDown
@@ -181,9 +188,21 @@ export default function Header() {
             </ul>
           </div>
 
-          <Link href="#proyectos" onClick={scrollTo("proyectos")}>
+          <Link
+            href="#proyectos"
+            onClick={scrollTo("proyectos")}
+            className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
             PROYECTOS
           </Link>
+          <a
+            href="https://wa.me/message/DMF23YLR6NINL1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            CONTACTANOS
+          </a>
         </nav>
       </div>
 

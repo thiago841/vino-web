@@ -7,7 +7,6 @@ import elemBranding02 from "../assets/img-branding/elemBranding02.png";
 import elemBranding03 from "../assets/img-branding/elemBranding03.png";
 import elemBranding04 from "../assets/img-branding/elemBranding04.png";
 import HeaderWeb from "../components/HeaderWeb";
-import { Link } from "wouter";
 
 export default function Branding() {
   return (
@@ -99,14 +98,14 @@ export default function Branding() {
               de regalos. Pensado para parejas que ya tienen su estética
               definida y necesitan la parte digital resuelta.
             </p>
-            <Link
+            <a
               href="https://wa.me/message/DMF23YLR6NINL1"
               target="_blank"
               rel="noopener noreferrer"
               className="self-start text-white bg-black rounded-full px-3 "
             >
               más info
-            </Link>
+            </a>
           </div>
           <div className="flex flex-col items-center justify-center gap-10 bg-white h-[75vh] rounded-tr-[13rem] py-15 px-10">
             <h3 className=" text-4xl self-start font-regular leading-8">
@@ -119,14 +118,35 @@ export default function Branding() {
               menú, cartelería y ambientación). Todo con una misma estética,
               coherente de punta a punta.
             </p>
-            <Link
+            <a
               href="https://wa.me/message/DMF23YLR6NINL1"
               target="_blank"
               rel="noopener noreferrer"
               className="self-start text-white bg-black rounded-full px-3 "
             >
               más info
-            </Link>
+            </a>
+          </div>
+        </section>
+        <section className="bg-black flex flex-col py-20 gap-8 font-coolvetica items-center justify-center text-white">
+          <h2 className="  text-5xl font-regular text-justify px-10">
+            PACK FULL
+          </h2>
+          <div className="flex flex-col items-center justify-center gap-3 px-10">
+            <p className="text-justify">
+              La experiencia integral: diseñamos la identidad visual de tu boda
+              y la aplicamos a todo, desde la papelería hasta el save the date y
+              la invitación web. Un solo estudio, una sola estética, en cada
+              pieza que ven vos y tus invitados.
+            </p>
+            <a
+              href="https://wa.me/message/DMF23YLR6NINL1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" text-bordo bg-white rounded-full px-3 font-regular mt-5"
+            >
+              más info
+            </a>
           </div>
         </section>
       </main>

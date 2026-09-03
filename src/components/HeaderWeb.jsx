@@ -8,6 +8,10 @@ export default function HeaderWeb({
   borderColor = "border-black",
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [btnHovered, setBtnHovered] = useState(false);
+
+  // Extraemos el color del prop (ej: "bg-bordo" → "bordo", "bg-black" → "black")
+  const hoverBgColor = btnColor.replace(/^bg-/, "");
   const closeMenu = () => setMenuOpen(false);
   return (
     <>
@@ -94,10 +98,19 @@ export default function HeaderWeb({
           <Link
             href="/invitacion-web"
             onClick={closeMenu}
-            className={`flex items-center gap-[18px] px-6 py-5 text-[15px] ${textColor}`}
+            className={`flex items-center gap-[18px] border-b ${borderColor} px-6 py-5 text-[15px] ${textColor}`}
           >
             Invitación Web
           </Link>
+          <a
+            href="wa.me/message/DMF23YLR6NINL1"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className={`flex items-center gap-[18px] px-6 py-5 text-[15px] ${textColor}`}
+          >
+            Contactanos
+          </a>
         </nav>
 
         {/* =========================
@@ -105,24 +118,15 @@ export default function HeaderWeb({
       ========================== */}
 
         <div
-          className={`mx-auto mt-5 hidden min-h-[76px] w-[calc(100%-60px)] items-center rounded-[18px] border ${borderColor} ${bgColor} px-7 lg:flex`}
+          className={`font-coolvetica mx-auto hidden min-h-[76px] items-center border ${borderColor} ${bgColor} px-15 lg:flex`}
         >
           {/* Logo */}
 
           <Link
             href="/"
-            className={`flex min-w-[230px] items-center gap-[15px] text-[17px] font-bold ${textColor}`}
+            className={` flex min-w-[230px] items-center gap-[15px] text-[17px] font-bold ${textColor} hover:scale-102 hover:-rotate-1 transition-all duration-300`}
           >
-            <div className="relative h-8 w-[18px]">
-              <span
-                className={`absolute left-[6px] top-0 h-2 w-[6px] ${textColor}`}
-              />
-
-              <span
-                className={`absolute bottom-0 left-px h-6 w-4 rounded-[5px_5px_1px_1px] ${textColor}`}
-              />
-            </div>
-            VINO ESTUDIO
+            @VINO ESTUDIO
           </Link>
 
           {/* Links */}
@@ -130,28 +134,28 @@ export default function HeaderWeb({
           <nav className="flex flex-1 items-center justify-center gap-[38px]">
             <Link
               href="/"
-              className={`relative py-2 text-sm ${textColor} after:absolute after:bottom-[2px] after:left-0 after:h-px after:w-full ${textColor}`}
+              className={`relative py-2 text-md ${textColor} after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100`}
             >
               Inicio
             </Link>
 
             <Link
               href="/branding"
-              className={`py-2 text-sm ${textColor} transition-opacity hover:opacity-60`}
+              className={`relative py-2 text-md ${textColor} after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100`}
             >
               Branding para bodas
             </Link>
 
             <Link
               href="/foto-video"
-              className={`py-2 text-sm ${textColor} transition-opacity hover:opacity-60`}
+              className={`relative py-2 text-md ${textColor} after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100`}
             >
               Fotos y Videos
             </Link>
 
             <Link
               href="/invitacion-web"
-              className={`py-2 text-sm ${textColor} transition-opacity hover:opacity-60`}
+              className={`relative py-2 text-md ${textColor} after:absolute after:bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:after:scale-x-100`}
             >
               Invitación Web
             </Link>
@@ -159,13 +163,26 @@ export default function HeaderWeb({
 
           {/* Botón */}
 
-          <Link
-            href="#contacto"
-            className="flex min-w-[175px] items-center justify-center gap-3 rounded-full border border-[#42170d] px-[18px] py-3 text-[13px] text-[#42170d] transition-colors duration-300 hover:bg-[#42170d] hover:text-[#f8f5e9]"
+          <a
+            href="wa.me/message/DMF23YLR6NINL1"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => setBtnHovered(true)}
+            onMouseLeave={() => setBtnHovered(false)}
+            style={
+              btnHovered
+                ? {
+                    backgroundColor: `var(--color-${hoverBgColor}, ${hoverBgColor})`,
+                    color: "white",
+                    borderColor: "transparent",
+                  }
+                : {}
+            }
+            className={`flex min-w-[175px] text-md items-center justify-center gap-3 rounded-full border ${borderColor} px-[18px] py-3 ${textColor} transition-colors duration-300`}
           >
-            Cotizá tu invitación
+            Contactanos
             <span className="text-lg leading-none">→</span>
-          </Link>
+          </a>
         </div>
       </header>
     </>

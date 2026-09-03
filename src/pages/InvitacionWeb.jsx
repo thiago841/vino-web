@@ -2,7 +2,7 @@ import HeaderWeb from "../components/HeaderWeb";
 import mockupWeb from "../assets/img-invitacionWeb/mockup-web.png";
 import imgBgGris from "../assets/img-invitacionWeb/img-bgGris.png";
 import logoBotella from "../assets/img-invitacionWeb/logo-botella.png";
-import { Link } from "wouter";
+
 
 export default function InvitacionWeb() {
   return (
@@ -66,14 +66,14 @@ export default function InvitacionWeb() {
             <p>• Optimización para una carga rápida y una navegación fluida.</p>
             <p>• Diseño de íconos y recursos gráficos</p>
           </div>
-          <Linkk
+          <a
             href="https://wa.me/message/DMF23YLR6NINL1"
             target="_blank"
             rel="noopener noreferrer"
             className="self-end text-bordo text-lg mt-5 bg-blanco rounded-full px-3 font-regular "
           >
             más info
-          </Linkk>
+          </a>
         </section>
 
         <section className="flex relative items-center justify-center">
