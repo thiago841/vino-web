@@ -105,7 +105,7 @@ export default function Header() {
               >
                 <li>
                   <Link href="/branding" onClick={closeAll}>
-                    Branding L
+                    Branding
                   </Link>
                 </li>
                 <li>
