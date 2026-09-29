@@ -13,9 +13,18 @@ export default function InvitacionWeb() {
           name="description"
           content="Invitaciones digitales personalizadas con RSVP, Google Maps, galería y más. Diseñadas a medida para tu casamiento. Vino Estudio, Argentina."
         />
-        <meta property="og:title" content="Invitaciones Web para Bodas | Vino Estudio" />
-        <meta property="og:description" content="Tu boda merece una invitación digital única. Diseño a medida con RSVP, ubicación y más. Vino Estudio." />
-        <link rel="canonical" href="https://vinoestudio.com/invitacion-web" />
+        <meta
+          property="og:title"
+          content="Invitaciones Web para Bodas | Vino Estudio"
+        />
+        <meta
+          property="og:description"
+          content="Tu boda merece una invitación digital única. Diseño a medida con RSVP, ubicación y más. Vino Estudio."
+        />
+        <link
+          rel="canonical"
+          href="https://vinoestudio.com.ar/invitacion-web"
+        />
       </Helmet>
       <HeaderWeb
         bgColor="bg-blanco"
@@ -54,7 +63,11 @@ export default function InvitacionWeb() {
               </p>
             </div>
           </div>
-          <img src={mockupWeb} alt="Mockup invitación web para bodas - Vino Estudio" className="w-full h-auto lg:w-1/2" />
+          <img
+            src={mockupWeb}
+            alt="Mockup invitación web para bodas - Vino Estudio"
+            className="w-full h-auto lg:w-1/2"
+          />
         </section>
 
         <section className="flex flex-col gap-5 px-10 py-15 text-justify bg-bordo text-blanco lg:py-30 lg:px-20 lg:gap-10">
@@ -129,7 +142,11 @@ export default function InvitacionWeb() {
             </p>
           </div>
           <div className="flex flex-col justify-center items-center gap-2 mt-3 lg:mt-10">
-            <img src={logoBotella} alt="Logo botella Vino Estudio" className="w-7 lg:w-12" />
+            <img
+              src={logoBotella}
+              alt="Logo botella Vino Estudio"
+              className="w-7 lg:w-12"
+            />
             <p className="font-manuscrita text-3xl -rotate-5 lg:text-5xl">
               gracias
             </p>
