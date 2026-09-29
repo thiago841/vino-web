@@ -3,7 +3,7 @@ import vinoEstudio from "../../assets/img/vino-estudio.png";
 export default function Footer() {
   return (
     <footer className="bg-bordo">
-      <img src={vinoEstudio} alt="" />
+      <img src={vinoEstudio} alt="Logo Vino Estudio" />
     </footer>
   );
 }

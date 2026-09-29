@@ -14,7 +14,12 @@
 }
 
 .logos-slide {
-  animation: 25s slide infinite linear;
+  animation: 90s slide infinite linear;
+  display: flex;
+}
+
+.titulo-slide {
+  animation: 10s slide infinite linear;
   display: flex;
 }
 
@@ -23,6 +28,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }

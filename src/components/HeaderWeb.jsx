@@ -103,7 +103,7 @@ export default function HeaderWeb({
             Invitación Web
           </Link>
           <a
-            href="wa.me/message/DMF23YLR6NINL1"
+            href="https://wa.me/message/DMF23YLR6NINL1"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
@@ -164,7 +164,7 @@ export default function HeaderWeb({
           {/* Botón */}
 
           <a
-            href="wa.me/message/DMF23YLR6NINL1"
+            href="https://wa.me/message/DMF23YLR6NINL1"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => setBtnHovered(true)}

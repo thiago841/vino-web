@@ -4,9 +4,9 @@ export default function Servicios() {
   return (
     <section
       id="servicios"
-      className="flex flex-col w-full text-5xl leading-9 bg-celeste font-coolvetica font-regular text-bordo justify-center items-center"
+      className="flex flex-col md:flex-row w-full text-5xl leading-9 bg-celeste font-coolvetica font-regular text-bordo md:border md:border-bordo justify-center items-center"
     >
-      <div className="flex flex-col h-[50vh] items-center justify-between border border-bordo w-full">
+      <div className="flex flex-col h-[50vh] items-center justify-between border border-bordo md:border-none w-full">
         <h2 className="pt-30">
           BRANDING <br />
           PARA <br />
@@ -14,32 +14,32 @@ export default function Servicios() {
         </h2>
         <Link
           href="/branding"
-          className="border border-bordo w-full text-lg text-center py-2"
+          className="border-t border-bordo w-full text-lg text-center py-2 hover:bg-bordo hover:text-celeste transition-colors duration-300"
         >
-          VER MAS
+          VER MÁS
         </Link>
       </div>
-      <div className="flex flex-col h-[50vh] items-center justify-between border border-bordo w-full">
+      <div className="flex flex-col h-[50vh] items-center justify-between border-l border-r border-bordo w-full">
         <h2 className="pt-30">
           CONTENIDO <br /> PARA <br /> MARCAS
         </h2>
         <Link
           href="/foto-video"
-          className="border border-bordo w-full text-lg text-center py-2"
+          className="border-t border-bordo w-full text-lg text-center py-2 hover:bg-bordo hover:text-celeste transition-colors duration-300"
         >
-          VER MAS
+          VER MÁS
         </Link>
       </div>
-      <div className="flex flex-col h-[50vh] items-center justify-between border border-bordo w-full">
+      <div className="flex flex-col h-[50vh] items-center justify-between border border-bordo md:border-none w-full">
         <h2 className="pt-40">
           INVITACIONES <br />
           WEB
         </h2>
         <Link
           href="/invitacion-web"
-          className="border border-bordo w-full text-lg text-center py-2"
+          className="border-t border-bordo w-full text-lg text-center py-2 hover:bg-bordo hover:text-celeste transition-colors duration-300"
         >
-          VER MAS
+          VER MÁS
         </Link>
       </div>
     </section>

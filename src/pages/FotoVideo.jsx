@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "react-feather";
 import lamb1 from "../assets/img/lamb/lamb-01.webp";
-import lamb2 from "../assets/img/lamb/lamb-02.jpg";
+import lamb2 from "../assets/img/lamb/lamb-02.webp";
 import lambVideo from "../assets/img/lamb/lamb-03.mp4";
 import entreCapas1 from "../assets/img/entre-capas/entre-capas-01.webp";
 import entreCapas2 from "../assets/img/entre-capas/entre-capas-02.webp";
@@ -21,14 +21,40 @@ import melo3 from "../assets/img/melo/melo-03.webp";
 import hamburga1 from "../assets/img/hamburga/hamburga-01.webp";
 import hamburga2 from "../assets/img/hamburga/hamburga-02.webp";
 import hamburgaVideo from "../assets/img/hamburga/hamburga-video.mp4";
-import materia01 from "../assets/img/materia/materia01.jpg";
-import materia02 from "../assets/img/materia/materia02.jpg";
-import materia03 from "../assets/img/materia/materia03.jpg";
-import polibas1 from "../assets/img/polibas/polibas-01.jpg";
-import polibas2 from "../assets/img/polibas/polibas-02.jpg";
-import polibas3 from "../assets/img/polibas/polibas-03.jpg";
+import materia01 from "../assets/img/materia/materia01.webp";
+import materia02 from "../assets/img/materia/materia02.webp";
+import materia03 from "../assets/img/materia/materia03.webp";
+import polibas1 from "../assets/img/polibas/polibas-01.webp";
+import polibas2 from "../assets/img/polibas/polibas-02.webp";
+import polibas3 from "../assets/img/polibas/polibas-03.webp";
+import alPie01 from "../assets/img/AlPie/alpie-01.webp";
+import alPie02 from "../assets/img/AlPie/alpie-02.webp";
+import alPie03 from "../assets/img/AlPie/alpie-03.webp";
+import burgerHaus01 from "../assets/img/burgerHaus/burgerhaus-01.webp";
+import burgerHaus02 from "../assets/img/burgerHaus/burgerhaus-02.webp";
+import burgerHaus03 from "../assets/img/burgerHaus/burgerhaus-03.webp";
+import emilia01 from "../assets/img/emilia/emilia-01.webp";
+import emilia02 from "../assets/img/emilia/emilia-02.webp";
+import emilia03 from "../assets/img/emilia/emilia-03.webp";
+import nereIsa01 from "../assets/img/nere-isa/nere-isa-01.webp";
+import nereIsa02 from "../assets/img/nere-isa/nere-isa-02.webp";
+import nereIsa03 from "../assets/img/nere-isa/nere-isa-03.webp";
+import tizi01 from "../assets/img/tizi/tizi-01.webp";
+import tizi02 from "../assets/img/tizi/tizi-02.webp";
+import tizi03 from "../assets/img/tizi/tizi-03.webp";
+import polos01 from "../assets/img/polos/polos-01.webp";
+import polos02 from "../assets/img/polos/polos-02.webp";
+import polos03 from "../assets/img/polos/polos-03.webp";
+import valenTomi01 from "../assets/img/valen-tomi/vyt-01.webp";
+import valenTomi02 from "../assets/img/valen-tomi/vyt-02.webp";
+import valenTomi03 from "../assets/img/valen-tomi/vyt-03.webp";
+import wedding01 from "../assets/img/wedding/wedding-01.webp";
+import wedding02 from "../assets/img/wedding/wedding-02.webp";
+import wedding03 from "../assets/img/wedding/wedding-03.webp";
+
 import HeaderWeb from "../components/HeaderWeb";
 import Carousel from "../components/Carousel";
+import { Helmet } from "react-helmet-async";
 
 export default function FotoVideo() {
   const secciones = [
@@ -52,6 +78,15 @@ export default function FotoVideo() {
     },
     {
       id: 3,
+      titulo: "AL PIE",
+      media: [
+        { type: "image", src: alPie01 },
+        { type: "image", src: alPie02 },
+        { type: "image", src: alPie03 },
+      ],
+    },
+    {
+      id: 4,
       titulo: "KIKI",
       media: [
         { type: "image", src: kiki1 },
@@ -60,7 +95,7 @@ export default function FotoVideo() {
       ],
     },
     {
-      id: 8,
+      id: 5,
       titulo: "MATERÍA PREMIUM",
       media: [
         { type: "image", src: materia01 },
@@ -69,7 +104,34 @@ export default function FotoVideo() {
       ],
     },
     {
-      id: 4,
+      id: 6,
+      titulo: "BURGER HAUS",
+      media: [
+        { type: "image", src: burgerHaus01 },
+        { type: "image", src: burgerHaus02 },
+        { type: "image", src: burgerHaus03 },
+      ],
+    },
+    {
+      id: 7,
+      titulo: "EMILIA",
+      media: [
+        { type: "image", src: emilia01 },
+        { type: "image", src: emilia02 },
+        { type: "image", src: emilia03 },
+      ],
+    },
+    {
+      id: 8,
+      titulo: "POLOS OPUESTOS",
+      media: [
+        { type: "image", src: polos01 },
+        { type: "image", src: polos02 },
+        { type: "image", src: polos03 },
+      ],
+    },
+    {
+      id: 9,
       titulo: "BELLEZA SECRETA",
       media: [
         { type: "image", src: bellezaSecreta1 },
@@ -78,7 +140,25 @@ export default function FotoVideo() {
       ],
     },
     {
-      id: 5,
+      id: 10,
+      titulo: "VALEN & TOMI",
+      media: [
+        { type: "image", src: valenTomi01 },
+        { type: "image", src: valenTomi02 },
+        { type: "image", src: valenTomi03 },
+      ],
+    },
+    {
+      id: 11,
+      titulo: "WEDDING",
+      media: [
+        { type: "image", src: wedding01 },
+        { type: "image", src: wedding02 },
+        { type: "image", src: wedding03 },
+      ],
+    },
+    {
+      id: 12,
       titulo: "NEUTRO",
       media: [
         { type: "image", src: neutro1 },
@@ -87,7 +167,25 @@ export default function FotoVideo() {
       ],
     },
     {
-      id: 6,
+      id: 13,
+      titulo: "TIZI XV",
+      media: [
+        { type: "image", src: tizi01 },
+        { type: "image", src: tizi02 },
+        { type: "image", src: tizi03 },
+      ],
+    },
+    {
+      id: 14,
+      titulo: "NERE & ISA",
+      media: [
+        { type: "image", src: nereIsa01 },
+        { type: "image", src: nereIsa02 },
+        { type: "image", src: nereIsa03 },
+      ],
+    },
+    {
+      id: 15,
       titulo: "MELO",
       media: [
         { type: "image", src: melo1 },
@@ -96,7 +194,7 @@ export default function FotoVideo() {
       ],
     },
     {
-      id: 7,
+      id: 16,
       titulo: "HAMBURGA",
       media: [
         { type: "image", src: hamburga1 },
@@ -105,7 +203,7 @@ export default function FotoVideo() {
       ],
     },
     {
-      id: 9,
+      id: 17,
       titulo: "POLIBAS",
       media: [
         { type: "image", src: polibas1 },
@@ -169,11 +267,53 @@ export default function FotoVideo() {
 
   return (
     <>
+      <Helmet>
+        <title>Foto y Video para Marcas | Vino Estudio</title>
+        <meta
+          name="description"
+          content="Contenido audiovisual para marcas y emprendimientos. Fotografía y video profesional con identidad visual propia. Proyectos como Lamb, Kiki, Hamburga y más. Vino Estudio, Argentina."
+        />
+        <meta
+          property="og:title"
+          content="Foto y Video para Marcas | Vino Estudio"
+        />
+        <meta
+          property="og:description"
+          content="Fotografía y video para marcas que buscan hacer las cosas diferente. Vino Estudio."
+        />
+        <link rel="canonical" href="https://vinoestudio.com.ar/foto-video" />
+      </Helmet>
       <HeaderWeb />
-      <main className="flex flex-col items-center justify-center py-5 font-coolvetica font-book">
+      <style>{`
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(28px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .fade-up { animation: fadeUp 0.7s ease both; }
+        .media-card { overflow: hidden; position: relative; }
+        .media-card img,
+        .media-card video { transition: transform 0.4s ease; }
+        .media-card:hover img,
+        .media-card:hover video { transform: scale(1.04); }
+        .media-card::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: rgba(0,0,0,0);
+          transition: background 0.3s ease;
+          pointer-events: none;
+        }
+        .media-card:hover::after { background: rgba(0,0,0,0.12); }
+      `}</style>
+      <main className="flex flex-col items-center justify-center py-5 font-coolvetica font-book gap-10 md:gap-15">
         {secciones.map((seccion, sectionIdx) => (
-          <section key={seccion.id} className="w-full md:text-center">
-            <h2 className="text-bordo text-3xl pt-5 ml-10">{seccion.titulo}</h2>
+          <section
+            key={seccion.id}
+            className="flex flex-col w-full text-center gap-5"
+          >
+            <h2 className="fade-up text-black text-3xl pt-5">
+              {seccion.titulo}
+            </h2>
 
             {/* ── Mobile/tablet: Carousel ── */}
             <div className="md:hidden flex justify-center">
@@ -183,7 +323,7 @@ export default function FotoVideo() {
                     <img
                       key={index}
                       src={media.src}
-                      alt=""
+                      alt={`${seccion.titulo} - foto ${index + 1} - Vino Estudio`}
                       className="object-cover"
                     />
                   ) : (
@@ -202,17 +342,17 @@ export default function FotoVideo() {
             </div>
 
             {/* ── Desktop (md+): flex row outside carousel ── */}
-            <div className="hidden md:flex justify-center gap-3 px-10 py-4">
+            <div className="hidden md:flex justify-center gap-3 px-10">
               {seccion.media.map((media, mediaIdx) => (
                 <div
                   key={mediaIdx}
-                  className="flex border border-black cursor-pointer"
+                  className="media-card flex border border-black cursor-pointer"
                   onClick={() => openLightbox(sectionIdx, mediaIdx)}
                 >
                   {media.type === "image" ? (
                     <img
                       src={media.src}
-                      alt=""
+                      alt={`${seccion.titulo} - foto ${mediaIdx + 1} - Vino Estudio`}
                       className=" object-cover w-80 h-100"
                     />
                   ) : (
@@ -231,6 +371,10 @@ export default function FotoVideo() {
           </section>
         ))}
       </main>
+      <footer className="flex w-full items-center justify-around font-coolvetica font-bold border-t border-black mt-5 lg:text-xl py-5 lg:py-10 lg:mt-10">
+        <p>VINO ESTUDIO</p>
+        <p>ARG 2026</p>
+      </footer>
 
       {/* ── Desktop Lightbox ── */}
       {lightbox.open && lightboxMedia && (
@@ -268,7 +412,7 @@ export default function FotoVideo() {
             ) : (
               <img
                 src={lightboxMedia.src}
-                alt=""
+                alt={`${secciones[lightbox.sectionIdx].titulo} - foto ampliada ${lightbox.mediaIdx + 1} - Vino Estudio`}
                 className="max-w-[90vw] rounded-lg shadow-2xl object-contain"
                 style={{ maxHeight: "calc(90vh - 56px)" }}
               />

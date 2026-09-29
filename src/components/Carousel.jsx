@@ -148,7 +148,9 @@ export default function Carousel({
             ) : (
               <img
                 src={currentSlide?.props?.src}
-                alt=""
+                alt={
+                  currentSlide?.props?.alt || "Foto de galería - Vino Estudio"
+                }
                 className="max-w-[90vw] rounded-lg shadow-2xl object-contain"
                 style={{ maxHeight: "calc(90vh - 56px)" }}
               />
