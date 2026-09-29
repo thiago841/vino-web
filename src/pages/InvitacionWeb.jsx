@@ -92,15 +92,15 @@ export default function InvitacionWeb() {
               • Enlace web listo para compartir por WhatsApp, redes sociales o
               correo electrónico.
             </p>
+            <p>• Integración de formulario de confirmación de asistencia.</p>
+            <p>• Optimización para una carga rápida y una navegación fluida.</p>
+            <p>• Diseño de íconos y recursos gráficos</p>
             <p>
               • Botones y links interactivos para: Confirmación de asistencia
               (RSVP). Ubicación del evento mediante Google Maps. Hoteles
               sugeridos. Lista de regalos (si aplica). Contacto por WhatsApp (si
               aplica).
             </p>
-            <p>• Integración de formulario de confirmación de asistencia.</p>
-            <p>• Optimización para una carga rápida y una navegación fluida.</p>
-            <p>• Diseño de íconos y recursos gráficos</p>
           </div>
           <a
             href="https://wa.me/message/DMF23YLR6NINL1"
@@ -128,18 +128,18 @@ export default function InvitacionWeb() {
           <h2 className="text-3xl font-bold lg:text-5xl lg:self-start">
             ¿Por qué elegir una invitación web?
           </h2>
-          <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-4 lg:text-2xl lg:w-full">
+          <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-4 lg:text-xl xl:text-2xl lg:w-full">
             <p>• Centraliza toda la información del evento en un solo lugar.</p>
+            <p>• Facilita la confirmación de asistencia.</p>
             <p>
               • Evita reimprimir invitaciones ante cambios de último momento.
             </p>
-            <p>• Facilita la confirmación de asistencia.</p>
             <p>• Se comparte fácilmente por WhatsApp o correo.</p>
-            <p>• Reduce el uso de papel sin resignar diseño.</p>
             <p>
               • Brinda una experiencia moderna, elegante e interactiva desde el
               primer contacto con los invitados.
             </p>
+            <p>• Reduce el uso de papel sin resignar diseño.</p>
           </div>
           <div className="flex flex-col justify-center items-center gap-2 mt-3 lg:mt-10">
             <img

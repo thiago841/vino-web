@@ -6,7 +6,7 @@ export default function Vision() {
       <img
         src={elem1}
         alt="Elemento decorativo - Vino Estudio"
-        className="absolute w-50 left-10 md:w-80 md:70 lg:left-150"
+        className="absolute w-50 left-10 md:w-80 md:left-35 xl:left-100 2xl:left-150"
       />
       <h2 className="w-65 text-3xl md:text-5xl md:w-100 text-justify z-10 font-regular [text-align-last:justify]">
         NO BUSCAMOS HACER ALGO QUE SIMPLEMENTE SE VEA BIEN. BUSCAMOS CREAR ALGO

@@ -14,17 +14,53 @@ import elem2 from "../../assets/img/elem-2.png";
 
 export default function UltimosProyectos() {
   const carouselItems = [
-    { src: webVino06, width: 270, alt: "Proyecto Vino Estudio - diseño para marcas" },
-    { src: webVino07, width: 270, alt: "Proyecto Vino Estudio - contenido visual" },
+    {
+      src: webVino06,
+      width: 270,
+      alt: "Proyecto Vino Estudio - diseño para marcas",
+    },
+    {
+      src: webVino07,
+      width: 270,
+      alt: "Proyecto Vino Estudio - contenido visual",
+    },
     { src: webVino08, width: 270, alt: "Proyecto Vino Estudio - branding" },
-    { src: gifBaufel, width: 270, alt: "Proyecto Baufel - contenido audiovisual Vino Estudio" },
+    {
+      src: gifBaufel,
+      width: 270,
+      alt: "Proyecto Baufel - contenido audiovisual Vino Estudio",
+    },
     { src: UP01, width: 270, alt: "Proyecto UP01 - foto y video Vino Estudio" },
-    { src: gifRafart, width: 270, alt: "Proyecto Rafart - contenido para marcas Vino Estudio" },
-    { src: UP03, width: 270, alt: "Proyecto UP03 - diseño visual Vino Estudio" },
-    { src: UP09, width: 270, alt: "Proyecto UP09 - foto para marcas Vino Estudio" },
-    { src: UP8, width: 270, alt: "Proyecto UP - video para marcas Vino Estudio" },
-    { src: UP10, width: 270, alt: "Proyecto UP10 - contenido visual Vino Estudio" },
-    { src: UP11, width: 270, alt: "Proyecto UP11 - branding para marcas Vino Estudio" },
+    {
+      src: gifRafart,
+      width: 270,
+      alt: "Proyecto Rafart - contenido para marcas Vino Estudio",
+    },
+    {
+      src: UP03,
+      width: 270,
+      alt: "Proyecto UP03 - diseño visual Vino Estudio",
+    },
+    {
+      src: UP09,
+      width: 270,
+      alt: "Proyecto UP09 - foto para marcas Vino Estudio",
+    },
+    {
+      src: UP8,
+      width: 270,
+      alt: "Proyecto UP - video para marcas Vino Estudio",
+    },
+    {
+      src: UP10,
+      width: 270,
+      alt: "Proyecto UP10 - contenido visual Vino Estudio",
+    },
+    {
+      src: UP11,
+      width: 270,
+      alt: "Proyecto UP11 - branding para marcas Vino Estudio",
+    },
     { src: UP14, width: 270, alt: "Proyecto UP14 - diseño Vino Estudio" },
   ];
   return (
@@ -38,7 +74,7 @@ export default function UltimosProyectos() {
       <img
         src={elem2}
         alt="Elemento decorativo - Vino Estudio"
-        className="absolute -top-10 right-7 w-35 md:w-55 lg:w-70 md:-top-20 md:right-30 lg:right-150"
+        className="absolute -top-10 right-7 w-35 md:w-55 lg:w-70 md:-top-20 md:right-30 xl:right-100 2xl:right-150"
       />
       <div className="overflow-hidden w-full">
         <div

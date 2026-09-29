@@ -190,23 +190,23 @@ export default function Header() {
             <ul
               className={`
                 absolute top-full left-1/2 -translate-x-1/2 mt-3
-                flex flex-col gap-2 text-bordo bg-blanco text-base font-bold
+                flex flex-col items-start gap-2 text-bordo bg-blanco text-base font-bold
                 px-5 py-4 rounded shadow-lg whitespace-nowrap
                 transition-all duration-300 ease-in-out origin-top
                 ${serviciosDesktopOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}
               `}
             >
-              <li>
+              <li className="hover:bg-bordo hover:text-white hover:rounded hover:px-3 hover:py-1 hover:transition-all hover:duration-300 hover:ease-in-out">
                 <Link href="/branding" onClick={closeAll}>
                   Branding
                 </Link>
               </li>
-              <li>
+              <li className="hover:bg-bordo hover:text-white hover:rounded hover:px-3 hover:py-1 hover:transition-all hover:duration-300 hover:ease-in-out">
                 <Link href="/foto-video" onClick={closeAll}>
                   Foto y Video
                 </Link>
               </li>
-              <li>
+              <li className="hover:bg-bordo hover:text-white hover:rounded hover:px-3 hover:py-1 hover:transition-all hover:duration-300 hover:ease-in-out">
                 <Link href="/invitacion-web" onClick={closeAll}>
                   Invitaciones Web
                 </Link>

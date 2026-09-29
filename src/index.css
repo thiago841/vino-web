@@ -13,6 +13,9 @@
   --font-weight-regular: 500;
 }
 
+@custom-variant short (@media (max-height: 600px));
+@custom-variant tall (@media (min-height: 800px));
+
 .logos-slide {
   animation: 90s slide infinite linear;
   display: flex;

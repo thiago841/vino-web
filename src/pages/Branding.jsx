@@ -18,9 +18,15 @@ export default function Branding() {
           name="description"
           content="Diseñamos la identidad visual completa de tu boda: paleta de colores, tipografías, papelería, save the date animado e invitación web. Vino Estudio, Argentina."
         />
-        <meta property="og:title" content="Branding para Bodas | Vino Estudio" />
-        <meta property="og:description" content="Identidad visual integral para tu casamiento. Save the date, invitación web, papelería y más. Vino Estudio." />
-        <link rel="canonical" href="https://vinoestudio.com/branding" />
+        <meta
+          property="og:title"
+          content="Branding para Bodas | Vino Estudio"
+        />
+        <meta
+          property="og:description"
+          content="Identidad visual integral para tu casamiento. Save the date, invitación web, papelería y más. Vino Estudio."
+        />
+        <link rel="canonical" href="https://vinoestudio.com.ar/branding" />
       </Helmet>
       <HeaderWeb />
       <main className="bg-gris font-coolvetica overflow-hidden">
@@ -61,17 +67,17 @@ export default function Branding() {
               el día del evento y lineamientos para la ambientación general.
             </p>
           </article>
-          <div className="flex h-[45vh] lg:h-[50vh] w-full">
+          <div className="flex h-[40vh] short:h-[80vh] lg:max-h-full w-full">
             <div className="w-1/2  relative lg:h-full ">
               <img
                 src={elemBranding01}
                 alt="Elemento decorativo - identidad visual boda"
-                className="w-20 lg:w-30 absolute z-10 top-0 left-7 lg:left-[60%] lg:top-[-10%]"
+                className="w-20 lg:w-30 absolute z-10 top-0 left-7 md:left-[60%] lg:top-[-10%]"
               />
               <img
                 src={branding08}
                 alt="Diseño de papelería para casamiento - Vino Estudio"
-                className="w-40 lg:w-70 absolute bottom-0 right-0 lg:right-[7%]"
+                className="w-40 md:w-55 lg:w-70 absolute bottom-0 right-0 lg:right-[7%]"
               />
             </div>
             <div className="relative w-1/2 lg:h-full">
@@ -83,7 +89,7 @@ export default function Branding() {
               <img
                 src={branding09}
                 alt="Identidad visual para casamiento - Vino Estudio"
-                className="w-40 lg:w-60 absolute top-0 right-0 lg:left-[7%]"
+                className="w-40 md:w-50 lg:w-60 absolute top-0 right-0 md:left-[13%] lg:left-[7%]"
               />
             </div>
           </div>
@@ -92,9 +98,9 @@ export default function Branding() {
               <img
                 src={elemBranding04}
                 alt="Elemento decorativo diseño boda"
-                className="w-20 lg:w-30 absolute z-50 -top-7 right-7"
+                className="w-20 lg:w-30 absolute z-50 -top-7 right-7 short:top-[-30%]"
               />
-              <p className="text-justify [text-align-last:justify] self-end pt-6 lg:text-2xl max-w-sm">
+              <p className="text-justify [text-align-last:justify] self-end pt-6 md:text-lg lg:text-2xl max-w-sm">
                 Acompañamos todo el proceso con un enfoque profesional y
                 cercano, para que la pareja pueda disfrutar de los preparativos
                 sabiendo que cada detalle visual está resuelto.
@@ -104,15 +110,19 @@ export default function Branding() {
               <img
                 src={elemBranding03}
                 alt="Elemento gráfico decorativo - branding boda"
-                className="w-20 lg:w-30 absolute top-0 right-3 z-10 lg:left-[20%]"
+                className="w-20 lg:w-30 absolute top-0 right-3 z-10 md:left-[40%] lg:left-[20%] short:top-[-20%] short:left-[25%]"
               />
-              <img src={branding10} alt="Diseño gráfico boda - Vino Estudio" className="w-45 lg:w-60 absolute" />
+              <img
+                src={branding10}
+                alt="Diseño gráfico boda - Vino Estudio"
+                className="w-45 md:w-55 lg:w-60 absolute md:left-[5%]"
+              />
             </div>
           </div>
         </section>
-        <section className="flex flex-col pb-20 gap-3 md:flex-row md:gap-0 md:px-20">
-          <div className="fade-up flex flex-col items-center justify-center gap-10 bg-white h-[75vh] rounded-tr-[13rem] py-15 px-10">
-            <h3 className=" text-4xl self-start font-regular leading-8 lg:text-5xl lg:leading-10">
+        <section className="flex flex-col pb-20 lg:pb-0 gap-3 lg:flex-row lg:gap-0 md:px-10 xl:px-20">
+          <div className="fade-up flex flex-col items-center justify-center gap-10 bg-white h-[75vh] short:h-[115vh] rounded-tr-[13rem] py-15 px-10">
+            <h3 className=" text-4xl self-start font-regular leading-8 xl:text-5xl xl:leading-10">
               SAVE THE DATE <br /> + INVITACIÓN
             </h3>
             <p className="text-lg text-justify [text-align-last:justify] lg:text-2xl lg:pr-15">
@@ -126,13 +136,13 @@ export default function Branding() {
               href="https://wa.me/message/DMF23YLR6NINL1"
               target="_blank"
               rel="noopener noreferrer"
-              className="self-start text-white bg-black rounded-full px-3 lg:text-xl transition-all duration-300 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:scale-105"
+              className="self-start text-white bg-black rounded-full px-3 xl:text-xl transition-all duration-300 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:scale-105"
             >
               más info
             </a>
           </div>
-          <div className="fade-up-delay-1 flex flex-col items-center justify-center gap-10 bg-white h-[75vh] rounded-tr-[13rem] md:rounded-tr-none md:rounded-bl-[13rem] py-15 px-10">
-            <h3 className=" text-4xl self-start font-regular leading-8 lg:text-5xl lg:leading-10">
+          <div className="fade-up-delay-1 flex flex-col items-center justify-center gap-10 bg-white h-[75vh] short:h-[115vh] rounded-tr-[13rem] lg:rounded-tr-none lg:rounded-bl-[13rem] py-15 px-10">
+            <h3 className=" text-4xl self-start font-regular leading-8 xl:text-5xl xl:leading-10">
               BRANDING KIT <br /> Y DISEÑO INTEGRAL
             </h3>
             <p className="text-lg text-justify [text-align-last:justify] lg:text-2xl lg:pr-10">
@@ -146,18 +156,18 @@ export default function Branding() {
               href="https://wa.me/message/DMF23YLR6NINL1"
               target="_blank"
               rel="noopener noreferrer"
-              className="self-start text-white bg-black rounded-full px-3 lg:text-xl transition-all duration-300 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:scale-105"
+              className="self-start text-white bg-black rounded-full px-3 xl:text-xl transition-all duration-300 hover:bg-white hover:text-black hover:ring-1 hover:ring-black hover:scale-105"
             >
               más info
             </a>
           </div>
         </section>
         <section className="bg-black flex flex-col py-20 gap-8 font-coolvetica items-center justify-center text-white">
-          <h2 className="fade-up text-5xl font-regular text-justify px-10 lg:text-9xl">
+          <h2 className="fade-up text-5xl font-regular text-justify px-10 lg:text-7xl xl:text-9xl">
             PACK FULL
           </h2>
-          <div className="fade-up-delay-1 flex flex-col items-center justify-center gap-3 lg:gap-20 px-10 lg:flex-row lg:w-1/2">
-            <p className="text-justify [text-align-last:justify] lg:text-3xl lg:w-1/2">
+          <div className="fade-up-delay-1 flex flex-col items-center justify-center gap-3 lg:gap-20 px-10 short:px-0 lg:flex-row lg:w-1/2">
+            <p className="text-justify [text-align-last:justify] md:w-2/3 xl:text-3xl lg:w-1/2 short:text-2xl">
               La experiencia integral: diseñamos la identidad visual de tu boda
               y la aplicamos a todo, desde la papelería hasta el save the date y
               la invitación web. Un solo estudio, una sola estética, en cada
@@ -167,7 +177,7 @@ export default function Branding() {
               href="https://wa.me/message/DMF23YLR6NINL1"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black bg-white rounded-full px-3 font-regular mt-5 lg:self-end lg:text-xl transition-all duration-300 hover:bg-transparent hover:text-white hover:ring-1 hover:ring-white hover:scale-105"
+              className="text-black bg-white rounded-full px-3 font-regular mt-5 lg:self-end xl:text-xl transition-all duration-300 hover:bg-transparent hover:text-white hover:ring-1 hover:ring-white hover:scale-105"
             >
               más info
             </a>

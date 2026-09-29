@@ -20,9 +20,9 @@ export default function QuienesSomos() {
         <img
           src={virNoro}
           alt="Virginia y Lautaro - Fundadores de Vino Estudio"
-          className="absolute w-35 md:w-60 -rotate-3 -top-5 left-5 md:-top-20 md:left-100 "
+          className="absolute w-35 lg:w-45 xl:w-60 -rotate-3 -top-5 left-5 md:top-[-15%] md:left-[10%] 2xl:left-[20%] "
         />
-        <article className="flex flex-col font-regular w-40 text-[10px] md:text-lg md:w-96 text-justify [text-align-last:justify] mr-5 md:mr-10 gap-3 md:gap-5">
+        <article className="flex flex-col font-regular w-40 text-[10px] md:text-base md:w-70 lg:text-lg lg:w-96 text-justify [text-align-last:justify] mr-5 md:mr-10 gap-3 md:gap-5">
           <p>
             Somos Virginia y Lautaro, y Vino Estudio nace de nuestras ganas de
             crear, de trabajar juntos y de convertir ideas en algo que se pueda
